@@ -1,5 +1,5 @@
 import { BlogPost } from "../components/BlogPost";
-import { Footer } from "../components/footer";
+import { Footer } from "../components/Footer";
 import data from "../data/data.json";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
