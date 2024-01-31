@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { DevBlogCard } from "../components/DevBlogCard";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+
 export const DevsBlog = () => {
   const [devBlogs, setDevBlogs] = useState([]);
 
