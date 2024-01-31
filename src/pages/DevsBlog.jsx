@@ -23,10 +23,10 @@ export const DevsBlog = () => {
     <>
       <Navbar />
       <section className="px-24 pt-32 pb-12">
-        <h1 className="font-['Inter'] font-semibold text-lg">
+        <h1 className="font-['Inter'] font-semibold text-lg text-left">
           DEV'S BLOG FROM API
         </h1>
-        <div className="grid md:grid-cols-3  sm:grid-cols-2 grid-cols-1   gap-12 mt-6">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 mt-6">
           {devBlogs.map((blogObj) => (
             <DevBlogCard key={blogObj.id} blogData={blogObj} />
           ))}
