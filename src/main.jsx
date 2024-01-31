@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import FullBlog from "./routes/FullBlog";
 import App from "./App";
 import { BlogPage } from "./pages/BlogPage";
+import { DevsBlog } from "./pages/devsBlog";
+import { ReadBlog } from "./pages/ReadBlog";
 
 const router = createBrowserRouter([
   {
@@ -16,17 +18,21 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <App />,
+    // errorElement: <App />,
+  },
+  {
+    path: "/devblog/:slug",
+    element: <ReadBlog />,
     // errorElement: <ErrorPage />,
   },
-  // {
-  //   path: "/blogs",
-  //   element: <Blogs />,
-  //   errorElement: <ErrorPage />,
-  // },
   {
     path: "/blog/:id",
     element: <BlogPage />,
     // errorElement: <ErrorPage />,
+  },
+  {
+    path: "/devblog",
+    element: <DevsBlog />,
   },
 ]);
 

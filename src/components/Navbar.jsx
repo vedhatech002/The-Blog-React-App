@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SearchBar } from "./SearchBar";
 
 export const Navbar = () => {
@@ -10,6 +11,18 @@ export const Navbar = () => {
         <SearchBar />
       </div>
       <div className="items-center justify-center gap-8 text-zinc-700 md:flex hidden">
+        <Link
+          to={`/home`}
+          className="flex items-center gap-2 cursor-pointer text-sm  hover:text-zinc-900 "
+        >
+          Home
+        </Link>
+        <Link
+          to={`/devblog`}
+          className="flex items-center gap-2 cursor-pointer text-sm  hover:text-zinc-900 "
+        >
+          devBlogs
+        </Link>
         <a className="flex items-center gap-2 cursor-pointer text-sm  hover:text-zinc-900 ">
           <span>
             <svg
